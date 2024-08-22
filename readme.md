@@ -12,23 +12,22 @@
 
 # Comandos basicos:
 - git init;
-
 - git add nomeDoArquivo.extensao ou git add . 
--git commit -m "msg explicando o commit" --> nao esquecer das boas praticas;
--git branch -M main;
--git remote add origin (linkDoRepositorioDoGitHub);
--git push -u origin main;
+- git commit -m "msg explicando o commit" --> nao esquecer das boas praticas;
+- git branch -M main;
+- it remote add origin (linkDoRepositorioDoGitHub);
+- git push -u origin main;
 
 # Outros comandos:
--git status; (ver as alterações).
--git branch nomeNovaBranch;
--git checkout nomeDaBranch; (mudar de branch)
--git merge nomeDaBranch; (mesclar a branch atual com a escolhida)
--git pull origin nomeDaBranch; (atualizar o repositorio local (da maquina) com o do servidor (github))
+- git status; (ver as alterações).
+- git branch nomeNovaBranch;
+- git checkout nomeDaBranch; (mudar de branch)
+- git merge nomeDaBranch; (mesclar a branch atual com a escolhida)
+- git pull origin nomeDaBranch; (atualizar o repositorio local (da maquina) com o do servidor (github))
 
 
 # Alguns conceitos:
--->main (branch);
--->origin (nome do remote);
---> extensao: .html. css, etc;
---> o . é tudo modificado;
+--> main (branch); <br>
+--> origin (nome do remote); <br>
+--> extensao: .html. css, etc;<br>
+--> o . é tudo modificado; <br>
