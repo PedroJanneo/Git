@@ -13,7 +13,7 @@
 # Comandos basicos:
 - git init;
 - git add nomeDoArquivo.extensao ou git add . 
-- git commit -m "msg explicando o commit" --> nao esquecer das boas praticas;
+- git commit -m "msg explicando o commit" --> nao esquecer das boas praticas.
 - git branch -M main;
 - git remote add origin (linkDoRepositorioDoGitHub);
 - git push -u origin main;
@@ -31,3 +31,11 @@
 --> origin (nome do remote); <br>
 --> extensao: .html. css, etc;<br>
 --> o . é tudo modificado; <br>
+
+# Comandos do terminal (auxilia no uso git):
+- mkdir nomeDaPasta; -> criar pasta.
+- touch nomeDoArquivo.extensao; -> criar arquivo.
+- cd nomeDaPasta; ->entar na pasta.
+- cd .. ;-> voltar um repositorio(posição).
+- ls; -> mostra todos os arquivos dentro da pasta.
+- code . ; -> abrir o vs code dentro da pasta.
