@@ -39,4 +39,8 @@
 - cd .. ;-> voltar um repositorio(posição).
 - ls; -> mostra todos os arquivos dentro da pasta.
 - code . ; -> abrir o vs code dentro da pasta.
+- git log ou git log --oneline; --> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. ATENÇÃO: n1 1º opção,presssiona a tecla 'q' em seguida.
+
+# Atalhos
 - tecla q; -> interrope as açoes do git.
+
