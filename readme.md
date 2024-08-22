@@ -39,3 +39,4 @@
 - cd .. ;-> voltar um repositorio(posição).
 - ls; -> mostra todos os arquivos dentro da pasta.
 - code . ; -> abrir o vs code dentro da pasta.
+- tecla q; -> interrope as açoes do git.
