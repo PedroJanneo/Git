@@ -44,3 +44,6 @@
 # Atalhos
 - tecla q; -> interrope as açoes do git.
 
+# Observações
+
+- Depois que você fez o *git push - u origin main* pela primeira vez, nas demais vezes, só digitar *git push*
