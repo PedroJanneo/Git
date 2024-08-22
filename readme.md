@@ -2,8 +2,8 @@
 - Criado apenas para testar os comandos (pratica)
 
 # Boas praicas commit:
-- Feat: nova funcionalidade;
-- Fix: correçao de bugs;
+- feat: nova funcionalidade;
+- fix: correçao de bugs;
 - docs: mudança de documenação;
 - style: mudança na formatação (css);
 - refactor: melhora a legibilidade do código, sem adicionar funcionalidades nem corrigir bugs (deixar o cod mais limpo);
@@ -15,7 +15,7 @@
 - git add nomeDoArquivo.extensao ou git add . 
 - git commit -m "msg explicando o commit" --> nao esquecer das boas praticas;
 - git branch -M main;
-- it remote add origin (linkDoRepositorioDoGitHub);
+- git remote add origin (linkDoRepositorioDoGitHub);
 - git push -u origin main;
 
 # Outros comandos:
