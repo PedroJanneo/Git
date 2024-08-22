@@ -36,8 +36,8 @@
 - cd .. ;-> voltar um repositorio(posição).
 - ls; -> mostra todos os arquivos dentro da pasta.
 - code . ; -> abrir o vs code dentro da pasta.
-- git log ou git log --oneline; --> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
-- git diff nomeDoArquivo.extensao; --> mostra as alterações feitas
+- git log ou git log --oneline; -> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
+- git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
 
 
 # Atalhos
@@ -58,3 +58,7 @@
 - **_codigoDaModificacao_** é dado no **git log** ou na **pagina do historicos de commits**.
 - Enquanto tiver no **git checkout head~N** não pode alterar o arquivo.
 
+# Arquivos do git
+
+- .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
+- .gitignore -> arquivo que não deve ser salvo pelo git. -> pesquisar quando usar o gitignore.
