@@ -28,6 +28,7 @@
 - git push -u nomeDoRemote nomeDaBranch; --> branch principal é main
 
 # Outros comandos:
+- git clone linkRepositorio; -> cria uma copia do reposiorio (junto com o historico e commit)
 - git status; (ver as alterações).
 - git branch nomeNovaBranch;
 - git checkout nomeDaBranch OU **_codigoDaModificacao_** OU head~N; (mudar de branch)
