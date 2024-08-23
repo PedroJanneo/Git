@@ -25,7 +25,7 @@
 - git checkout nomeDaBranch OU **_codigoDaModificacao_** OU head~N; (mudar de branch)
 - git merge nomeDaBranch; (mesclar a branch atual com a escolhida)
 - git pull origin nomeDaBranch; (atualizar o repositorio local (da maquina) com o do servidor (github))
-- git reset; -> tira do stage.
+- git reset; -> tira do stage. (antes de fazer o commit )
 - git clean -df; -> tirar as modificações.
 - git checkout -- .; --> reverter as modficações, usar junto com o de cima.
 
@@ -62,3 +62,4 @@
 
 - .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
 - .gitignore -> arquivo que não deve ser salvo pelo git. -> pesquisar quando usar o gitignore.
+
