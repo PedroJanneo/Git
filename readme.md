@@ -32,6 +32,7 @@
 - git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
 - git reset --soft head~N --> voltar o commit sem apagar as modificações.
 - git reset --hard codigoDoCommit ou head~N ; -> deletar commit e as modificacao
+- git push -f nomeDoRemote nomeDoBranch ; ->forçando o local ser salvo no servidor
 
 # Comandos do terminal (auxilia no uso git):
 - mkdir nomeDaPasta; -> criar pasta.
@@ -64,7 +65,8 @@
 - Depois que você fez o **git push - u origin main** pela primeira vez, nas demais vezes, só digitar **git push**.
 - **_codigoDaModificacao_** é dado no **git log** ou na **pagina do historicos de commits**.
 - Enquanto tiver no **git checkout head~N** não pode alterar o arquivo.
-- O **git reset --hard**  ele apaga o historico do commit (do local/maquina), caso voce queira recuperar, **git pull nomeDoRemote mainomeDaBranchn** (ele puxa o ultimo salvo do github)
+- O **git reset --hard**  ele apaga o historico do commit (do local/maquina), caso voce queira recuperar, **git pull nomeDoRemote mainomeDaBranchn** (ele puxa o ultimo salvo do github).
+- Caso voce tenha um repositorio desatualizado em comparação do servidor, e tenha novos arquivos/modificações, use o **git pull nomeDoRemote mainomeDaBranchn** e da o nome do commit de marge.
 
 # Arquivos do git
 - .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
