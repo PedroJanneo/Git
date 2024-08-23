@@ -2,7 +2,7 @@
 - Criado apenas para testar os comandos (pratica)
 - Criando para facilitar o acesso aos comandos (teoria)
 
-# Boas praicas commit:
+# Boas praticas commit:
 - feat: nova funcionalidade;
 - fix: correçao de bugs;
 - docs: mudança de documenação;
