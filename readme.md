@@ -28,6 +28,9 @@
 - git reset; -> tira do stage. (antes de fazer o commit )
 - git clean -df; -> tirar as modificações.
 - git checkout -- .; --> reverter as modficações, usar junto com o de cima.
+- git log ou git log --oneline; -> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
+- git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
+- git reset --soft head~N --> voltar o commit sem apagar as modificações.
 
 # Comandos do terminal (auxilia no uso git):
 - mkdir nomeDaPasta; -> criar pasta.
@@ -36,8 +39,6 @@
 - cd .. ;-> voltar um repositorio(posição).
 - ls; -> mostra todos os arquivos dentro da pasta.
 - code . ; -> abrir o vs code dentro da pasta.
-- git log ou git log --oneline; -> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
-- git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
 
 # Comandos para restaurar arquivos
     - Esses comandos servem para restaurar aruivos excluidos ( ele puxa do ultimo commit)
@@ -56,7 +57,7 @@
 --> extensao: .html. css, etc;<br>
 --> o . é tudo modificado; <br>
 --> stage -> git add; <br>
---> ~N -> quantas versões você quer voltar? **LEMBRANDO:** a main é a principal, voce volta apartir dela.
+--> ~N -> quantas versões você quer voltar? **LEMBRANDO:** a main é a principal, voce volta apartir dela. ( ~N -> quanidade, tipo, 1,2,3..)
 
 # Observações
 - Depois que você fez o **git push - u origin main** pela primeira vez, nas demais vezes, só digitar **git push**.
