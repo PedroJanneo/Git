@@ -2,6 +2,14 @@
 - Criado apenas para testar os comandos (pratica)
 - Criando para facilitar o acesso aos comandos (teoria)
 
+# Comandos para configurar 1° vez:
+- git config --global user.name "seuNome"
+- git config --global user.email "seuEmail@example.com"
+
+# Comandos para desconfigurar:
+- git config --global --unset user.name
+- git config --global --unset user.email
+
 # Boas praticas commit:
 - feat: nova funcionalidade;
 - fix: correçao de bugs;
@@ -32,7 +40,8 @@
 - git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
 - git reset --soft head~N --> voltar o commit sem apagar as modificações.
 - git reset --hard codigoDoCommit ou head~N ; -> deletar commit e as modificacao
-- git push -f nomeDoRemote nomeDoBranch ; ->forçando o local ser salvo no servidor
+- git push -f nomeDoRemote nomeDoBranch ; -> forçando o local ser salvo no servidor (destroi o historico)
+- git remote set-url origin linkDoRepositorioNovo ; -> vincular com outro repositorio, desvinculando o outro.
 
 # Comandos do terminal (auxilia no uso git):
 - mkdir nomeDaPasta; -> criar pasta.
@@ -48,10 +57,6 @@
 - git reset;
 - git clean -df;
 - git checkout -- . ;
-
-# Atalhos
-- tecla q; -> interrope as açoes do git.
-- tecla tab -> em algumas ocasiões ela incrementa/completa o nome.
 
 # Alguns conceitos:
 --> main (branch); <br>
@@ -72,3 +77,6 @@
 - .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
 - .gitignore -> arquivo que não deve ser salvo pelo git. -> pesquisar quando usar o gitignore.
 
+# Atalhos
+- tecla q; -> interrope as açoes do git.
+- tecla tab -> em algumas ocasiões ela incrementa/completa o nome.
