@@ -16,8 +16,8 @@
 - git add nomeDoArquivo.extensao ou git add . 
 - git commit -m "msg explicando o commit" --> nao esquecer das boas praticas.
 - git branch -M main;
-- git remote add origin (linkDoRepositorioDoGitHub);
-- git push -u origin main;
+- git remote add nomeDoRemote (linkDoRepositorioDoGitHub);
+- git push -u nomeDoRemote nomeDaBranch; --> branch principal é main
 
 # Outros comandos:
 - git status; (ver as alterações).
@@ -64,6 +64,7 @@
 - Depois que você fez o **git push - u origin main** pela primeira vez, nas demais vezes, só digitar **git push**.
 - **_codigoDaModificacao_** é dado no **git log** ou na **pagina do historicos de commits**.
 - Enquanto tiver no **git checkout head~N** não pode alterar o arquivo.
+- O **git reset --hard**  ele apaga o historico do commit (do local/maquina), caso voce queira recuperar, **git pull nomeDoRemote mainomeDaBranchn** (ele puxa o ultimo salvo do github)
 
 # Arquivos do git
 - .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
