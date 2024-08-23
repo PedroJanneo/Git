@@ -39,11 +39,16 @@
 - git log ou git log --oneline; -> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
 - git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
 
+# Comandos para restaurar arquivos
+    - Esses comandos servem para restaurar aruivos excluidos ( ele puxa do ultimo commit)
+- git status; 
+- git reset;
+- git clean -df;
+- git checkout -- . ;
 
 # Atalhos
 - tecla q; -> interrope as açoes do git.
 - tecla tab -> em algumas ocasiões ela incrementa/completa o nome.
-
 
 # Alguns conceitos:
 --> main (branch); <br>
@@ -52,14 +57,13 @@
 --> o . é tudo modificado; <br>
 --> stage -> git add; <br>
 --> ~N -> quantas versões você quer voltar? **LEMBRANDO:** a main é a principal, voce volta apartir dela.
-# Observações
 
+# Observações
 - Depois que você fez o **git push - u origin main** pela primeira vez, nas demais vezes, só digitar **git push**.
 - **_codigoDaModificacao_** é dado no **git log** ou na **pagina do historicos de commits**.
 - Enquanto tiver no **git checkout head~N** não pode alterar o arquivo.
 
 # Arquivos do git
-
 - .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
 - .gitignore -> arquivo que não deve ser salvo pelo git. -> pesquisar quando usar o gitignore.
 
