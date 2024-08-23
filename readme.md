@@ -31,6 +31,7 @@
 - git log ou git log --oneline; -> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
 - git diff nomeDoArquivo.extensao; -> mostra as alterações feitas
 - git reset --soft head~N --> voltar o commit sem apagar as modificações.
+- git reset --hard codigoDoCommit ou head~N ; -> deletar commit e as modificacao
 
 # Comandos do terminal (auxilia no uso git):
 - mkdir nomeDaPasta; -> criar pasta.
