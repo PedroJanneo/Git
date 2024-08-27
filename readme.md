@@ -23,8 +23,8 @@
 - git init;
 - git add nomeDoArquivo.extensao ou git add . 
 - git commit -m "msg explicando o commit" --> nao esquecer das boas praticas.
-- git branch -M main;
-- git remote add nomeDoRemote (linkDoRepositorioDoGitHub);
+- git branch -M main; --> por convenção ja usamos a main, mas existe exceções
+- git remote add **_nomeDoRemote_** (linkDoRepositorioDoGitHub);
 - git push -u nomeDoRemote nomeDaBranch; --> branch principal é main
 
 # Outros comandos:
@@ -64,7 +64,7 @@
 --> origin (nome do remote); <br>
 --> extensao: .html. css, etc;<br>
 --> o . é tudo modificado; <br>
---> stage -> git add; <br>
+--> stage -> (fase depois de setar o git add) ; <br>
 --> ~N -> quantas versões você quer voltar? **LEMBRANDO:** a main é a principal, voce volta apartir dela. ( ~N -> quanidade, tipo, 1,2,3..)
 
 # Observações
@@ -72,7 +72,8 @@
 - **_codigoDaModificacao_** é dado no **git log** ou na **pagina do historicos de commits**.
 - Enquanto tiver no **git checkout head~N** não pode alterar o arquivo.
 - O **git reset --hard**  ele apaga o historico do commit (do local/maquina), caso voce queira recuperar, **git pull nomeDoRemote mainomeDaBranchn** (ele puxa o ultimo salvo do github).
-- Caso voce tenha um repositorio desatualizado em comparação do servidor, e tenha novos arquivos/modificações, use o **git pull nomeDoRemote mainomeDaBranchn** e da o nome do commit de marge.
+- Caso voce tenha um repositorio desatualizado em comparação do servidor, e tenha novos arquivos/modificações, use o **git pull nomeDoRemote mainomeDaBranch** e da o nome do commit de marge.
+- **_nomeDoRemote_**  normalmente é dado como origin, o comando ficaria: **git remote add origin (linkDoRepositorioDoGitHub)**.
 
 # Arquivos do git
 - .gitkeep -> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
