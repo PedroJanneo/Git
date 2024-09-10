@@ -44,6 +44,11 @@
 - git push -f nomeDoRemote nomeDoBranch ; -> forçando o local ser salvo no servidor (destroi o historico)
 - git remote set-url origin linkDoRepositorioNovo ; -> vincular com outro repositorio, desvinculando o outro.
 
+# Autenticar
+- gh auth login --> caso esteja usando git em outro soft(ex: replit) tem que usar esse comando para confirmar autenticação.
+- git config --global user.name "seuNome" --> assinar com seu nome 
+- git config --global user.email "seuEmail@example.com" --> assinar com seu email
+
 # Comandos do terminal (auxilia no uso git):
 - mkdir nomeDaPasta; -> criar pasta.
 - touch nomeDoArquivo.extensao; -> criar arquivo.
