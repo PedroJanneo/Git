@@ -48,6 +48,7 @@
 - gh auth login --> caso esteja usando git em outro soft(ex: replit) tem que usar esse comando para confirmar autenticação.
 - git config --global user.name "seuNome" --> assinar com seu nome 
 - git config --global user.email "seuEmail@example.com" --> assinar com seu email
+- gh auth logout --> deslogar
 
 # Comandos do terminal (auxilia no uso git):
 - mkdir nomeDaPasta; -> criar pasta.
