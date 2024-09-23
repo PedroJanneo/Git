@@ -1,12 +1,13 @@
 <!-- 
 
+Fazer as interligações de todos os arquivos com o readme
 
-    README.MD -> mudar tudo que esta escrito e colocar links de referencias aos documenos (posso ate colocar a instalacao git aq)
+Explicar melhor o arquivos git (criar eles via terminal)
+
+- dar espaços no comandos_avancados
 
 
 
-
-    branches e commits. -- falta interligar a parte de branchs com o branch.md
 
 
 

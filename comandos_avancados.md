@@ -17,7 +17,7 @@
   Muda para a branch e aplica a modificação do commit especificado.
 
 - **`git merge <nomeDaBranch>`**: 
-  Mescla a branch atual com a branch especificada.
+  Mescla a branch atual (mudar para ```main```) com a branch especificada (nomeDaBranch).
 
 ## Atualizando o Repositório Local
 - **`git pull origin <nomeDaBranch>`**: 
