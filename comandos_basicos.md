@@ -24,11 +24,12 @@ Feito isso vamos para o segundo passo :
 
 Para adicionar uma mensagem ao seu commit, use:
    - ```git commit -m "msg explicando o commit"```
-     - Não esquecer das [boas práticas ao escrever a mensagem de commit](readme.md#boas-praticas-commit).
+     - Não esquecer das [boas práticas ao escrever a mensagem de commit](commits.md).
 
 Para renomear a branch atual para `main`, utilize:
    - ```git branch -M main```
      - Por convenção, usamos a branch `main`, mas existem exceções.
+     - Não esquecer [boas praticas ao fazer branch](branchs.md).
 
 Para adicionar um remote ao seu repositório, execute:
 

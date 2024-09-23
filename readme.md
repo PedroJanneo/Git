@@ -1,93 +1,80 @@
-# Repositorio 
-- Criado apenas para testar os comandos (pratica)
-- Criando para facilitar o acesso aos comandos (teoria)
+# Git e github
+Git é um sistema de controle de versão distribuído amplamente utilizado para gerenciar projetos de desenvolvimento de software. Ele permite que você acompanhe as alterações feitas em arquivos ao longo do tempo, facilitando a colaboração entre equipes e o gerenciamento de versões. Com o Git, você pode:
 
-# Comandos para configurar 1° vez:
+- **Registrar Mudanças**: Guarde um histórico detalhado de todas as alterações feitas nos arquivos do seu projeto.
+- **Colaborar com Outros**: Trabalhe em conjunto com outros desenvolvedores, permitindo que cada um faça suas alterações e combine-as de forma eficiente.
+- **Reverter Alterações**: Se algo não sair como planejado, você pode facilmente voltar a uma versão anterior do seu projeto.
+
+### Como Baixar e Instalar o Git
+
+Para começar a usar o Git, siga os passos abaixo para baixá-lo e instalá-lo em seu sistema:
+
+1. **Acesse o Site Oficial do Git**  
+   Vá até [git](https://git-scm.com/) para acessar o site oficial do Git.
+
+2. **Baixe o Instalador**  
+   Na página inicial, você verá um botão de download que detectará automaticamente seu sistema operacional (Windows, macOS ou Linux). Clique no botão para baixar o instalador apropriado.
+
+3. **Execute o Instalador**  
+   Após o download, localize o arquivo e execute o instalador. Siga as instruções na tela para completar a instalação. Durante a instalação, você pode aceitar as configurações padrão ou personalizá-las conforme necessário.
+
+4. **Verifique a Instalação**  
+   Após a instalação, abra seu terminal (ou prompt de comando) e execute o seguinte comando para verificar se o Git foi instalado corretamente:
+
+
+
+# Configurando o git
+
+Para abrir o Git Bash diretamente dentro da pasta do seu projeto, siga estas etapas:
+
+1. **Navegue até a Pasta do Projeto**:
+   - Abra o **Explorador de Arquivos** e localize a pasta onde seu projeto está armazenado.
+
+2. **Clique com o Botão Direito do Mouse**:
+   - Dentro da pasta do projeto, clique com o botão direito em qualquer área em branco (não em cima de arquivos ou pastas).
+
+3. **Selecione "Git Bash Here"**:
+   - No menu que aparece, clique na opção **"Git Bash Here"**. 
+
+Abrindo o git bash: ![imagem](img/img1.png)
+
+
+4. Aqui iremos executar todos os comandos: ![imagemBash](img/img2.png)
+
+Ao abrir o ```git bash``` ele virá como uma folha em branco, então temos que configurar:
+
+## Comandos para configurar 1° vez:
 - git config --global user.name "seuNome"
 - git config --global user.email "seuEmail@example.com"
 
-# Comandos para desconfigurar:
+## Comandos para desconfigurar:
 - git config --global --unset user.name
 - git config --global --unset user.email
 
-# Boas praticas commit:
-- feat: nova funcionalidade;
-- fix: correçao de bugs;
-- docs: mudança de documenação;
-- style: mudança na formatação (css);
-- refactor: melhora a legibilidade do código, sem adicionar funcionalidades nem corrigir bugs (deixar o cod mais limpo);
-- test: adição ou correção de testes;
-- chore: adiciona novas pastas para organização de build e ferramentas.
 
-# Comandos basicos:
-- git init --> inicializa um repositorio git
-- git add nomeDoArquivo.extensao  --> adicionar um arquivo por vez | git add . --> adiona todos arquivos modificados.
-- git commit -m "msg explicando o commit" --> nao esquecer das boas praticas.
-- git branch -M main --> por convenção ja usamos a main, mas existe exceções
-- git remote add **_nomeDoRemote_** (linkDoRepositorioDoGitHub);
-- git push -u nomeDoRemote nomeDaBranch --> branch principal é main
+## Autenticar (caso esteja fora do terminal Git)
 
-# Outros comandos:
-- git clone linkRepositorio -> cria uma copia do reposiorio (junto com o historico e commit)
-- git status --> ver as alterações
-- git branch nomeNovaBranch
-- git checkout nomeDaBranch | **_codigoDaModificacao_** | head~N --> (mudar de branch)
-- git merge nomeDaBranch --> mesclar a branch atual com a escolhida
-- git pull origin nomeDaBranch --> atualizar o repositorio local (da maquina) com o do servidor (github)
-- git reset --> tira do stage. (antes de fazer o commit )
-- git clean -df --> tirar as modificações.
-- git checkout -- . --> reverter as modficações, usar junto com o de cima.
-- git log ou git log --oneline --> mostrar historicos de commits, o 1º forma geral, o 2º forma resumida. **ATENÇÃO:** na 1º opção,presssiona a tecla 'q' em seguida.
-- git diff nomeDoArquivo.extensao --> mostra as alterações feitas
-- git reset --soft head~N --> voltar o commit sem apagar as modificações.
-- git reset --hard codigoDoCommit ou head~N  --> deletar commit e as modificacao
-- git push -f nomeDoRemote nomeDoBranch  --> forçando o local ser salvo no servidor (destroi o historico)
-- git remote set-url origin linkDoRepositorioNovo  --> vincular com outro repositorio, desvinculando o outro.
-
-# Autenticar (caso esteja fora do terminal git)
-- gh auth login -->  confirmar autenticação.
-- git config --global user.name "seuNome" --> assinar com seu nome 
-- git config --global user.email "seuEmail@example.com" --> assinar com seu email
-- gh auth logout --> deslogar
-
-# Comandos do terminal (auxilia no uso git):
-- mkdir nomeDaPasta --> criar pasta.
-- touch nomeDoArquivo.extensao --> criar arquivo.
-- cd nomeDaPasta -->entar na pasta.
-- cd .. --> voltar um repositorio(posição).
-- ls --> mostra todos os arquivos dentro da pasta.
-- code .  --> abrir o vs code dentro da pasta.
-
-# Comandos para restaurar arquivos
-    - Esses comandos servem para restaurar aruivos excluidos ( ele puxa do ultimo commit)
-- git status
-- git reset
-- git clean -df
-- git checkout -- . 
-
-# Alguns conceitos:
---> main (branch) <br>
---> origin (nome do remote) <br>
---> extensao: .html. css, etc<br>
---> o . é tudo modificado <br>
---> stage --> (fase depois de setar o git add)  <br>
---> ~N --> quantas versões você quer voltar? **LEMBRANDO:** a main é a principal, voce volta apartir dela. ( ~N -> quanidade, tipo, 1,2,3..)
-
-# Observações
-- Depois que você fez o **git push - u origin main** pela primeira vez, nas demais vezes, só digitar **git push**.
-- **_codigoDaModificacao_** é dado no **git log** ou na **pagina do historicos de commits**.
-- Enquanto tiver no **git checkout head~N** não pode alterar o arquivo.
-- O **git reset --hard**  ele apaga o historico do commit (do local/maquina), caso voce queira recuperar, **git pull nomeDoRemote mainomeDaBranchn** (ele puxa o ultimo salvo do github).
-- Caso voce tenha um repositorio desatualizado em comparação do servidor, e tenha novos arquivos/modificações, use o **git pull nomeDoRemote mainomeDaBranch** e da o nome do commit de marge.
-- **_nomeDoRemote_**  normalmente é dado como **origin**, o comando ficaria: **git remote add origin https://github.com/usuario/repositorio.git**.
-
-# Arquivos do git
-- .gitkeep --> arquivo inexistente, usado so pra poder subir uma pasta (vazia) pro github.
-- .gitignore --> arquivo que não deve ser salvo pelo git. -> pesquisar quando usar o gitignore.
-
-# Atalhos
-- tecla q; --> interrope as açoes do git.
-- tecla tab --> em algumas ocasiões ela incrementa/completa o nome.
+Se você estiver utilizando um ambiente de desenvolvimento que não tenha acesso direto ao terminal Git, como o Replit, você ainda pode autenticar sua conta do GitHub. Isso é importante para garantir que você possa acessar repositórios, fazer commits e interagir com o GitHub diretamente a partir desse ambiente.
 
 
-[Ver exemplos](exemplos.md)
+1. **Login no GitHub**  
+   Execute o comando abaixo para confirmar a autenticação:  
+   `gh auth login`
+
+2. **Configurar Nome de Usuário**  
+   Para assinar seus commits com seu nome, use:  
+   `git config --global user.name "seuNome"`
+
+3. **Configurar E-mail**  
+   Para assinar seus commits com seu e-mail, use:  
+   `git config --global user.email "seuEmail@example.com"`
+
+4. **Logout do GitHub**  
+   Para deslogar, execute:  
+   `gh auth logout`
+
+
+
+
+
+
