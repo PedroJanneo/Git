@@ -1,4 +1,28 @@
-# Git e github
+# Sumario
+
+1. [Git](#git-e-github)
+
+2. [Comandos básicos do git](comandos_basicos.md)
+
+3. [Boas praticas do Commits](commits.md)
+
+4. [Boas praticas do Branchs](branchs.md)
+
+5. [Comandos via terminal](terminal.md)
+
+6. [Arquivos do Git](ArquivosGit.md)
+
+7. [Comandos Avançados do git](comandos_avancados.md)
+
+8. [Conceitos](Conceitos.md)
+
+9. [Restauração de arquivos do git](Restaurar.md)
+
+
+
+
+
+## Git e github
 Git é um sistema de controle de versão distribuído amplamente utilizado para gerenciar projetos de desenvolvimento de software. Ele permite que você acompanhe as alterações feitas em arquivos ao longo do tempo, facilitando a colaboração entre equipes e o gerenciamento de versões. Com o Git, você pode:
 
 - **Registrar Mudanças**: Guarde um histórico detalhado de todas as alterações feitas nos arquivos do seu projeto.
@@ -23,7 +47,7 @@ Para começar a usar o Git, siga os passos abaixo para baixá-lo e instalá-lo e
 
 
 
-# Configurando o git
+## Configurando o git
 
 Para abrir o Git Bash diretamente dentro da pasta do seu projeto, siga estas etapas:
 
@@ -44,8 +68,16 @@ Abrindo o git bash: ![imagem](img/img1.png)
 Ao abrir o ```git bash``` ele virá como uma folha em branco, então temos que configurar:
 
 ## Comandos para configurar 1° vez:
+O primeirocomando que iremos executar no ``git bash`` é o seguinte: 
+
 - git config --global user.name "seuNome"
+![User.name](img/img3.png)
+
+
 - git config --global user.email "seuEmail@example.com"
+![User.email](img/img4.png)
+
+
 
 ## Comandos para desconfigurar:
 - git config --global --unset user.name
@@ -72,9 +104,3 @@ Se você estiver utilizando um ambiente de desenvolvimento que não tenha acesso
 4. **Logout do GitHub**  
    Para deslogar, execute:  
    `gh auth logout`
-
-
-
-
-
-

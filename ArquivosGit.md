@@ -1,5 +1,6 @@
 # Arquivos do Git
 
+
 ## .gitkeep
 - **Descrição**: 
   - Um arquivo vazio criado para permitir que uma pasta vazia seja rastreada pelo Git.
@@ -18,6 +19,7 @@
   - É útil para excluir arquivos que não precisam ser incluídos no repositório, como arquivos temporários, arquivos de configuração locais ou dependências de desenvolvimento.
   - **Exemplo**:
     - Para ignorar arquivos de log e a pasta de dependências de um projeto, o conteúdo do arquivo `.gitignore` poderia ser:
-      ```
-      *.log
-      node_module
+
+
+  
+  **DICA**: criar esses arquivos pelo [terminal](terminal.md)
