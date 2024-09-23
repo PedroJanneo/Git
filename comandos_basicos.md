@@ -1,15 +1,5 @@
 # Git básico
 
-Para configurar o Git pela primeira vez, siga estes passos:
-
-1. Para definir o nome de usuário global para o Git, use:
-   - ```git config --global user.name "seuNome"```
-     - Substitua `"seuNome"` pelo seu nome completo.
-
-2. Para definir o e-mail global para o Git, utilize:
-   - ```git config --global user.email "seuEmail@example.com"```
-     - Substitua `"seuEmail@example.com"` pelo seu e-mail.
-     
 Para começar um envio via git, começamos pelo comando :
  -  ```git init```
  
