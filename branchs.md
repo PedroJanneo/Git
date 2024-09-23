@@ -1,4 +1,4 @@
--b## Boas Práticas de Branch
+## Boas Práticas de Branch
 
 - **main**: branch principal do projeto, onde o código está sempre em um estado estável.
   - Exemplo: `main`

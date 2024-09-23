@@ -60,12 +60,13 @@ Para abrir o Git Bash diretamente dentro da pasta do seu projeto, siga estas eta
 3. **Selecione "Git Bash Here"**:
    - No menu que aparece, clique na opção **"Git Bash Here"**. 
 
-Abrindo o git bash: ![imagem](img/img1.png)
+   - **Abrindo o git bash:** ![imagem](img/img1.png)
 
 
-4. Aqui iremos executar todos os comandos: ![imagemBash](img/img2.png)
+4. **Aqui iremos executar todos os comandos:**
+   -  ![imagemBash](img/img2.png)
 
-Ao abrir o ```git bash``` ele virá como uma folha em branco, então temos que configurar:
+   -  Ao abrir o ```git bash``` ele virá como uma folha em branco, então temos que configurar:
 
 ## Comandos para configurar 1° vez:
 O primeirocomando que iremos executar no ``git bash`` é o seguinte: 
