@@ -6,10 +6,13 @@
 - **`git status`**: 
   - Mostra as alterações no repositório.
 
-## Gerenciando Branches
+## Gerenciamento Branches
+- Caso for criar uma **branch**, faça um desses comandos logo em seguida do **git init**:
+- Ao criar uma nova `branch` [ use boas praticas ao fazer branch](branchs.md)
+
 - **`git branch <nomeNovaBranch>`**: 
   - Cria uma nova branch.
-  
+
 - **`git checkout <nomeDaBranch>`**: 
   - Muda para a branch especificada.
 
@@ -18,6 +21,9 @@
 
 - **`git merge <nomeDaBranch>`**: 
   - Mescla a branch atual (mudar para ```main```) com a branch especificada (nomeDaBranch).
+
+- **``git switch -b <nomeDaBranch>``**
+  - Esse comando cria e muda a branch.
 
 ## Atualizando o Repositório Local
 - **`git pull origin <nomeDaBranch>`**: 
