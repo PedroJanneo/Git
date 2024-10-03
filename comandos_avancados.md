@@ -59,6 +59,12 @@
 - **`git reset --hard <codigoDoCommit>` ou `head~N`**: 
   - Deleta o commit e as modificações.
 
+## Descartar as alterações locais e puxar o do servidor (github)
+- **`git reset --hard origin/main`**
+  - Substitua o `main` e o `origin` por seu caso. (normalmente o é ``main`` ou `master`).
+  - O ``origin`` é o mesmo nome de quandovocê criou um [repositorio](comandos_basicos.md#criando-o-remote)
+
+
 ## Forçando Push
 - **`git push -f <nomeDoRemote> <nomeDaBranch>`**: 
   - Força o push do repositório local para o remoto, sobrescrevendo o histórico.

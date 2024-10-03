@@ -1,11 +1,14 @@
 # Git básico
 
+## Inicializando um repositorio git
 Para começar um envio via git, começamos pelo comando :
  -  ```git init```
  
-Feito isso vamos para o segundo passo (git add) :
+Feito isso vamos para o segundo passo (git add).
 
-O ``git add`` por sua vez, tem duas formas de serem executadas, vamos lá:
+## Adicionando um arquivo no repositorio
+
+O ``git add`` por sua vez, tem ``duas`` formas de serem executadas, vamos lá:
  
    -  `git add index.html`
 
@@ -17,25 +20,29 @@ O ``git add`` por sua vez, tem duas formas de serem executadas, vamos lá:
    - `git add .`
       - Nesse outro caso, ele adiciona todos os arquivos que foram modificados.
 
-Para adicionar uma mensagem ao seu commit, use:
+## Adicionando commmits
+Para adicionar uma mensagem ao seu commit, use.
    - ```git commit -m "msg explicando o commit"```
      - Não esquecer das [boas práticas ao escrever a mensagem de commit](commits.md).
 
-Para renomear a branch atual para `main`, utilize:
-   - ```git branch -M main```
+## Mudando de branch:
+Para renomear a branch atual para `main` ou `master`, utilize:
+   - ```git branch -M main``` ou ```git branch -M master```
+   - Porém atualmente, é mais usado a ``main``.
      - A branch `main`, é a principal, caso queira colocar esse projeto atual na branch `principal` use `main`, caso contrário:
+   - Caso faça uma outra `branch` [ use boas praticas ao fazer branch](branchs.md). Para criar [uma nova](comandos_avancados.md#gerenciamento-branches)
 
-     - Caso faça uma outra `branch` [ use boas praticas ao fazer branch](branchs.md). Para criar [uma nova](comandos_avancados.md#gerenciamento-branches)
-
+## Criando o remote
 Para adicionar um remote ao seu repositório, execute:
 
-- ```git remote add origin https://github.com/usuario/repositorio.git```
+- ``git remote add nomeDoRemote https://github.com/usuario/repositorio.git``
    - O ``remote`` é a ligação que você vai fazer do seu comptador (local) com o github (servidor).
-    - o nome 'origin' é dado pela boa prática.
-    - não esqueça de substituir o link do repositorio pelo seu link.
+    - O **nomeDoRemote** você pode substituir por um nome de sua escolha, mas por convenção usamos ``origin``.
+    - Não esqueça de substituir o link do repositorio pelo seu link.
 
+## Enviando os arquivo
 Para enviar suas alterações para o repositório remoto, use:
    - ```git push -u nomeDoRemote nomeDaBranch```
      - o **NomedaBranch** normalmente é `main`.
-     - O **nomeDoRemote** é o mesmmo do passo anterior, por convenção e praticidade, sugiro colocar `origin`.
+     - O **nomeDoRemote** é o nome que você colocou no passo anterior.
       - Ficando: `git push -u origin main`.
