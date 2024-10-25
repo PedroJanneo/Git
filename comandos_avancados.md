@@ -60,9 +60,9 @@
   - Deleta o commit e as modificações.
 
 ## Descartar as alterações locais e puxar o do servidor (github)
-- **`git reset --hard origin/main`**
-  - Substitua o `main` e o `origin` por seu caso. (normalmente o é ``main`` ou `master`).
-  - O ``origin`` é o mesmo nome de quandovocê criou um [repositorio](comandos_basicos.md#criando-o-remote)
+- **`git reset --hard nomeRemote/Branch`**
+  - Substitua o `Branch` por seu caso. (normalmente é ``main`` ou `master`).
+  - O ``nomeRemote`` é o mesmo nome de quando você criou um [repositorio](comandos_basicos.md#criando-o-remote)
 
 
 ## Forçando Push
