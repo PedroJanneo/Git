@@ -18,6 +18,8 @@
 
 9. [Restauração de arquivos do git](Restaurar.md)
 
+10. [Git fora do git bash](#autenticar-caso-esteja-fora-do-terminal-git)
+
 
 
 
@@ -87,7 +89,7 @@ O primeirocomando que iremos executar no ``git bash`` é o seguinte:
 
 ## Autenticar (caso esteja fora do terminal Git)
 
-Se você estiver utilizando um ambiente de desenvolvimento que não tenha acesso direto ao terminal Git, como o Replit, você ainda pode autenticar sua conta do GitHub. Isso é importante para garantir que você possa acessar repositórios, fazer commits e interagir com o GitHub diretamente a partir desse ambiente.
+Se você estiver utilizando um ambiente de desenvolvimento que não tenha acesso direto ao terminal Git, como o [Replit](https://replit.com/login), você irá precisar autenticar sua conta do GitHub. Isso é importante para garantir que você possa acessar repositórios, fazer commits e interagir com o GitHub diretamente a partir desse ambiente. Para autenticar é bem simples. siga o passo a passo abaixo:
 
 
 1. **Login no GitHub**  
