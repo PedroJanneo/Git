@@ -104,6 +104,5 @@ Se você estiver utilizando um ambiente de desenvolvimento que não tenha acesso
    Para assinar seus commits com seu e-mail, use:  
    `git config --global user.email "seuEmail@example.com"`
 
-4. **Logout do GitHub**  
-   Para deslogar, execute:  
-   `gh auth logout`
+4. **Partiu se diverir**  
+   Depois de ter feito os passos 1 , 2 e 3, você ja etsá pronto para se divertir com o **git**, você pode começar por [aqui](comandos_basicos.md).
