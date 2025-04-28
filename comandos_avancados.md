@@ -25,6 +25,14 @@
 - **``git switch -b <nomeDaBranch>``**
   - Esse comando cria e muda a branch.
 
+**APÓS FAZER O MERGE:**
+
+- **``git branch -d <nomeDaBranch>``**
+    -Para apagar a branch (caso vpcê não tenha feito o merge ainda, o git te impede)
+
+- **``git push origin --delete <nomeDaBranch>``**
+    - Caso já tenha subido a branch para o github, é so dar esse comando para appagar por lá.
+
 ## Atualizando o Repositório Local
 - **`git pull origin <nomeDaBranch>`**: 
   - Atualiza o repositório local com as mudanças do repositório remoto (ex.: GitHub).
