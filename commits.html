@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas de Commits</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Git Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos_basicos.html">Comandos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="commits.html">Commits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branchs.html">Branchs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terminal.html">Terminal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="comandos_basicos.html" class="list-group-item list-group-item-action">Comandos Básicos</a>
+                    <a href="commits.html" class="list-group-item list-group-item-action active">Boas Práticas de Commits</a>
+                    <a href="branchs.html" class="list-group-item list-group-item-action">Boas Práticas de Branchs</a>
+                    <a href="terminal.html" class="list-group-item list-group-item-action">Comandos via Terminal</a>
+                    <a href="ArquivosGit.html" class="list-group-item list-group-item-action">Arquivos do Git</a>
+                    <a href="comandos_avancados.html" class="list-group-item list-group-item-action">Comandos Avançados</a>
+                    <a href="Conceitos.html" class="list-group-item list-group-item-action">Conceitos</a>
+                    <a href="Restaurar.html" class="list-group-item list-group-item-action">Restauração de Arquivos</a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-md-9">
+                <h1 class="mb-4">Boas Práticas de Commit</h1>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tipos de Commits</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo</th>
+                                        <th>Descrição</th>
+                                        <th>Exemplo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>feat</code></td>
+                                        <td>Nova funcionalidade</td>
+                                        <td><code>feat: adicionar autenticacao email</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>fix</code></td>
+                                        <td>Correção de bugs</td>
+                                        <td><code>fix: corrigir bug de login</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>docs</code></td>
+                                        <td>Mudança de documentação</td>
+                                        <td><code>docs: atualizar readme com instrucoes</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>style</code></td>
+                                        <td>Mudança na formatação (CSS)</td>
+                                        <td><code>style: ajustar estilo do botao</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>refactor</code></td>
+                                        <td>Melhora a legibilidade do código</td>
+                                        <td><code>refactor: limpar funcao de autenticacao</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>test</code></td>
+                                        <td>Adição ou correção de testes</td>
+                                        <td><code>test: adicionar teste para funcao de login</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>chore</code></td>
+                                        <td>Organização de build e ferramentas</td>
+                                        <td><code>chore: organizar pasta de testes</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumo dos Tipos de Commits</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>feat:</strong> Para novas funcionalidades.</li>
+                            <li class="list-group-item"><strong>fix:</strong> Para correções de bugs.</li>
+                            <li class="list-group-item"><strong>docs:</strong> Para mudanças na documentação.</li>
+                            <li class="list-group-item"><strong>style:</strong> Para ajustes de estilo que não afetam a lógica do código.</li>
+                            <li class="list-group-item"><strong>refactor:</strong> Para melhorias no código sem alterações na funcionalidade.</li>
+                            <li class="list-group-item"><strong>test:</strong> Para adição ou correção de testes.</li>
+                            <li class="list-group-item"><strong>chore:</strong> Para tarefas administrativas ou de manutenção.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>Documentação Git - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos de Terminal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Git Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos_basicos.html">Comandos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="commits.html">Commits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branchs.html">Branchs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="terminal.html">Terminal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="comandos_basicos.html" class="list-group-item list-group-item-action">Comandos Básicos</a>
+                    <a href="commits.html" class="list-group-item list-group-item-action">Boas Práticas de Commits</a>
+                    <a href="branchs.html" class="list-group-item list-group-item-action">Boas Práticas de Branchs</a>
+                    <a href="terminal.html" class="list-group-item list-group-item-action active">Comandos via Terminal</a>
+                    <a href="ArquivosGit.html" class="list-group-item list-group-item-action">Arquivos do Git</a>
+                    <a href="comandos_avancados.html" class="list-group-item list-group-item-action">Comandos Avançados</a>
+                    <a href="Conceitos.html" class="list-group-item list-group-item-action">Conceitos</a>
+                    <a href="Restaurar.html" class="list-group-item list-group-item-action">Restauração de Arquivos</a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-md-9">
+                <h1 class="mb-4">Comandos de Terminal</h1>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Criando Pastas e Arquivos</h2>
+                        
+                        <div class="mb-4">
+                            <h5><code>mkdir &lt;nomeDaPasta&gt;</code></h5>
+                            <p>Cria uma nova pasta.</p>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6>Exemplo:</h6>
+                                    <code>mkdir projeto</code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5><code>touch &lt;nomeDoArquivo.extensao&gt;</code></h5>
+                            <p>Cria um novo arquivo com a extensão especificada.</p>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6>Exemplo:</h6>
+                                    <code>touch README.md</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Navegando entre Pastas</h2>
+                        
+                        <div class="mb-4">
+                            <h5><code>cd &lt;nomeDaPasta&gt;</code></h5>
+                            <p>Entra na pasta especificada.</p>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6>Exemplo:</h6>
+                                    <code>cd projeto</code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5><code>cd ..</code></h5>
+                            <p>Volta uma pasta (ou diretório) na hierarquia.</p>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6>Exemplo:</h6>
+                                    <code>cd ..</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Listando Arquivos</h2>
+                        <h5><code>ls</code></h5>
+                        <p>Mostra todos os arquivos e pastas dentro do diretório atual.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Abrindo o Visual Studio Code</h2>
+                        <h5><code>code .</code></h5>
+                        <p>Abre o Visual Studio Code na pasta atual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>Documentação Git - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

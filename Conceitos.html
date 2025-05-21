@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos do Git</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Git Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos_basicos.html">Comandos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="commits.html">Commits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branchs.html">Branchs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terminal.html">Terminal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="comandos_basicos.html" class="list-group-item list-group-item-action">Comandos Básicos</a>
+                    <a href="commits.html" class="list-group-item list-group-item-action">Boas Práticas de Commits</a>
+                    <a href="branchs.html" class="list-group-item list-group-item-action">Boas Práticas de Branchs</a>
+                    <a href="terminal.html" class="list-group-item list-group-item-action">Comandos via Terminal</a>
+                    <a href="ArquivosGit.html" class="list-group-item list-group-item-action">Arquivos do Git</a>
+                    <a href="comandos_avancados.html" class="list-group-item list-group-item-action">Comandos Avançados</a>
+                    <a href="Conceitos.html" class="list-group-item list-group-item-action active">Conceitos</a>
+                    <a href="Restaurar.html" class="list-group-item list-group-item-action">Restauração de Arquivos</a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-md-9">
+                <h1 class="mb-4">Termos e Conceitos do Git</h1>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Branch</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5><code>main</code></h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ A branch principal do projeto.</li>
+                                    <li>✓ <strong>Exemplo</strong>: Geralmente, o código estável é mantido na branch <code>main</code>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Remote</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5><code>origin</code></h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ Nome padrão do repositório remoto.</li>
+                                    <li>✓ <strong>Exemplo</strong>: Ao clonar um repositório, ele é automaticamente associado ao remote chamado <code>origin</code>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Extensões de Arquivo</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5>Extensões</h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ Usadas para identificar o tipo de arquivo.</li>
+                                    <li>✓ <strong>Exemplos</strong>:
+                                        <ul>
+                                            <li><code>.html</code>: Arquivos de hipertexto.</li>
+                                            <li><code>.css</code>: Arquivos de estilo em cascata.</li>
+                                            <li><code>.js</code>: Arquivos de JavaScript.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Stage</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5><code>stage</code></h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ Fase onde as alterações são preparadas antes de serem comitadas.</li>
+                                    <li>✓ <strong>Exemplo</strong>: Após usar <code>git add</code>, os arquivos vão para o stage, prontos para o commit.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Voltar Commits</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5><code>~N</code></h5>
+                                <ul class="list-unstyled">
+                                    <li>✓ Indica quantos commits você deseja voltar na linha do tempo.</li>
+                                    <li>✓ <strong>Exemplos</strong>:
+                                        <ul>
+                                            <li><code>head~1</code>: Volta um commit.</li>
+                                            <li><code>head~2</code>: Volta dois commits.</li>
+                                        </ul>
+                                    </li>
+                                    <li>✓ <strong>Observação</strong>: A <code>main</code> é a branch principal e os comandos de voltar são executados a partir dela.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>Documentação Git - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

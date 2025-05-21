@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Básicos do Git</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Git Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="comandos_basicos.html">Comandos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="commits.html">Commits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branchs.html">Branchs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terminal.html">Terminal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="comandos_basicos.html" class="list-group-item list-group-item-action active">Comandos Básicos</a>
+                    <a href="commits.html" class="list-group-item list-group-item-action">Boas Práticas de Commits</a>
+                    <a href="branchs.html" class="list-group-item list-group-item-action">Boas Práticas de Branchs</a>
+                    <a href="terminal.html" class="list-group-item list-group-item-action">Comandos via Terminal</a>
+                    <a href="ArquivosGit.html" class="list-group-item list-group-item-action">Arquivos do Git</a>
+                    <a href="comandos_avancados.html" class="list-group-item list-group-item-action">Comandos Avançados</a>
+                    <a href="Conceitos.html" class="list-group-item list-group-item-action">Conceitos</a>
+                    <a href="Restaurar.html" class="list-group-item list-group-item-action">Restauração de Arquivos</a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-md-9">
+                <h1 class="mb-4">Git Básico</h1>
+
+                <section class="mb-5">
+                    <h2>Inicializando um repositório git</h2>
+                    <p>Para começar um envio via git, começamos pelo comando:</p>
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <code>git init</code>
+                        </div>
+                    </div>
+                    <p class="mt-3">Feito isso vamos para o segundo passo (git add).</p>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Adicionando um arquivo no repositório</h2>
+                    <p>O <code>git add</code> por sua vez, tem <strong>duas</strong> formas de serem executadas:</p>
+                    
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">1. Adicionar arquivo específico</h5>
+                            <code>git add index.html</code>
+                            <p class="mt-2">Nesse caso, estou usando um arquivo html para exemplo, mas pode ser qualquer outro tipo de arquivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">2. Adicionar todos os arquivos</h5>
+                            <code>git add .</code>
+                            <p class="mt-2">Nesse outro caso, ele adiciona todos os arquivos que foram modificados.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Adicionando commits</h2>
+                    <p>Para adicionar uma mensagem ao seu commit, use:</p>
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <code>git commit -m "msg explicando o commit"</code>
+                        </div>
+                    </div>
+                    <p class="mt-3">Trocar o que está entre aspas pelas <a href="commits.html">boas práticas ao escrever a mensagem de commit</a>.</p>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Mudando de branch</h2>
+                    <p>Para renomear a branch atual para <code>main</code> ou <code>master</code>, utilize:</p>
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <code>git branch -M main</code> ou <code>git branch -M master</code>
+                        </div>
+                    </div>
+                    <p class="mt-3">Porém atualmente, é mais usado a <code>main</code>.</p>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Criando o remote</h2>
+                    <p>Para adicionar um remote ao seu repositório, execute:</p>
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <code>git remote add nomeDoRemote https://github.com/usuario/esseÉUmLinkDoRepositorio.git</code>
+                        </div>
+                    </div>
+                    <p class="mt-3">O <code>git remote add</code> é a ligação que você vai fazer do seu computador (local) com o github (servidor).</p>
+                </section>
+
+                <section class="mb-5">
+                    <h2>Enviando os arquivos</h2>
+                    <p>Para enviar suas alterações para o repositório remoto, use:</p>
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <code>git push -u nomeDoRemote nomeDaBranch</code>
+                        </div>
+                    </div>
+                    <p class="mt-3">O <strong>nomeDaBranch</strong> normalmente é <code>main</code>.</p>
+                    <p>O <strong>nomeDoRemote</strong> é o nome que você colocou no passo anterior.</p>
+                    <p>Ficando: <code>git push -u origin main</code></p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>Documentação Git - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

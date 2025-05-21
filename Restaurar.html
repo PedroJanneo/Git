@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauração de Arquivos no Git</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Git Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos_basicos.html">Comandos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="commits.html">Commits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branchs.html">Branchs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terminal.html">Terminal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="comandos_basicos.html" class="list-group-item list-group-item-action">Comandos Básicos</a>
+                    <a href="commits.html" class="list-group-item list-group-item-action">Boas Práticas de Commits</a>
+                    <a href="branchs.html" class="list-group-item list-group-item-action">Boas Práticas de Branchs</a>
+                    <a href="terminal.html" class="list-group-item list-group-item-action">Comandos via Terminal</a>
+                    <a href="ArquivosGit.html" class="list-group-item list-group-item-action">Arquivos do Git</a>
+                    <a href="comandos_avancados.html" class="list-group-item list-group-item-action">Comandos Avançados</a>
+                    <a href="Conceitos.html" class="list-group-item list-group-item-action">Conceitos</a>
+                    <a href="Restaurar.html" class="list-group-item list-group-item-action active">Restauração de Arquivos</a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-md-9">
+                <h1 class="mb-4">Restaurar por Git</h1>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">1. <code>git status</code></h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <p>Exibe o estado atual do repositório. Mostra os arquivos modificados, adicionados, e se há arquivos não rastreados. É útil para entender o que precisa ser feito antes de um commit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">2. <code>git reset</code></h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <p>Desfaz alterações em commits ou arquivos. O comportamento pode variar:</p>
+                                <ul class="list-unstyled">
+                                    <li>✓ <code>git reset --soft HEAD~1</code>: Remove o último commit, mantendo as alterações na área de stage.</li>
+                                    <li>✓ <code>git reset HEAD~1</code>: Remove o último commit e as alterações vão para a área de trabalho.</li>
+                                    <li>✓ <code>git reset --hard HEAD~1</code>: Remove o último commit e descarta todas as alterações.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">3. <code>git clean -df</code></h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <p>Remove arquivos não rastreados do diretório de trabalho.</p>
+                                <ul class="list-unstyled">
+                                    <li>✓ <code>-d</code>: Remove diretórios não rastreados.</li>
+                                    <li>✓ <code>-f</code>: Força a remoção (necessário para que o comando funcione).</li>
+                                </ul>
+                                <div class="alert alert-warning mt-3">
+                                    <p class="mb-0"><strong>Atenção</strong>: Use este comando com cuidado, pois ele apaga permanentemente arquivos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">4. <code>git checkout -- .</code></h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <p>Desfaz todas as alterações não comitadas em arquivos rastreados no diretório de trabalho. O ponto (<code>.</code>) indica que a operação deve ser realizada em todos os arquivos do diretório atual.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger">
+                    <p class="mb-0">Esses comandos são bastante poderosos, então sempre tenha cuidado ao utilizá-los, especialmente <code>git reset</code> e <code>git clean</code>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>Documentação Git - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

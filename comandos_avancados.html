@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Avançados do Git</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Git Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos_basicos.html">Comandos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="commits.html">Commits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="branchs.html">Branchs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terminal.html">Terminal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="comandos_basicos.html" class="list-group-item list-group-item-action">Comandos Básicos</a>
+                    <a href="commits.html" class="list-group-item list-group-item-action">Boas Práticas de Commits</a>
+                    <a href="branchs.html" class="list-group-item list-group-item-action">Boas Práticas de Branchs</a>
+                    <a href="terminal.html" class="list-group-item list-group-item-action">Comandos via Terminal</a>
+                    <a href="ArquivosGit.html" class="list-group-item list-group-item-action">Arquivos do Git</a>
+                    <a href="comandos_avancados.html" class="list-group-item list-group-item-action active">Comandos Avançados</a>
+                    <a href="Conceitos.html" class="list-group-item list-group-item-action">Conceitos</a>
+                    <a href="Restaurar.html" class="list-group-item list-group-item-action">Restauração de Arquivos</a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-md-9">
+                <h1 class="mb-4">Comandos Avançados do Git</h1>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Clonando Repositórios</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git clone https://github.com/usuario/repositorio.git</code>
+                                <p class="mt-2">Cria uma cópia do repositório (junto com o histórico e commits).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Verificando Alterações</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git status</code>
+                                <p class="mt-2">Mostra as alterações no repositório.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Gerenciamento de Branches</h2>
+                        <p class="alert alert-info">Caso for criar uma <strong>branch</strong>, faça um desses comandos logo em seguida do <code>git init</code>.</p>
+                        <p>Ao criar uma nova <code>branch</code> <a href="branchs.html">use boas práticas ao fazer branch</a></p>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Comando</th>
+                                        <th>Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>git branch &lt;nomeNovaBranch&gt;</code></td>
+                                        <td>Cria uma nova branch.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git checkout &lt;nomeDaBranch&gt;</code></td>
+                                        <td>Muda para a branch especificada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git checkout &lt;nomeDaBranch&gt; | &lt;codigoDaModificacao&gt; | head~N</code></td>
+                                        <td>Muda para a branch e aplica a modificação do commit especificado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git merge &lt;nomeDaBranch&gt;</code></td>
+                                        <td>Mescla a branch atual (mudar para <code>main</code>) com a branch especificada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git switch -b &lt;nomeDaBranch&gt;</code></td>
+                                        <td>Cria e muda para a branch.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h5 class="mt-4">Após fazer o merge:</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><code>git branch -d &lt;nomeDaBranch&gt;</code></td>
+                                        <td>Para apagar a branch (caso você não tenha feito o merge ainda, o git te impede).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git push origin --delete &lt;nomeDaBranch&gt;</code></td>
+                                        <td>Caso já tenha subido a branch para o github, é só dar esse comando para apagar por lá.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Atualizando o Repositório Local</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git pull origin &lt;nomeDaBranch&gt;</code>
+                                <p class="mt-2">Atualiza o repositório local com as mudanças do repositório remoto (ex.: GitHub).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Manipulando o Stage e as Modificações</h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><code>git reset</code></td>
+                                        <td>Remove as alterações do stage (antes de fazer o commit).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git clean -df</code></td>
+                                        <td>Remove arquivos não rastreados e diretórios.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git checkout -- .</code></td>
+                                        <td>Reverte as modificações não comitadas.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Histórico de Commits</h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><code>git log</code></td>
+                                        <td>Mostra o histórico de commits (forma geral).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git log --oneline</code></td>
+                                        <td>Mostra o histórico de commits de forma resumida.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="alert alert-warning mt-3">
+                            <p class="mb-0"><strong>Atenção:</strong> Na primeira opção, pressione a tecla <code>q</code> para sair.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Mostrando Diferenças</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git diff &lt;nomeDoArquivo.extensao&gt;</code>
+                                <p class="mt-2">Mostra as alterações feitas em um arquivo específico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Revertendo Commits</h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><code>git reset --soft head~N</code></td>
+                                        <td>Volta o commit especificado, mantendo as modificações.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>git reset --hard &lt;codigoDoCommit&gt;</code> ou <code>head~N</code></td>
+                                        <td>Deleta o commit e as modificações.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Descartar as alterações locais e puxar o do servidor (github)</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git reset --hard nomeRemote/Branch</code>
+                                <p class="mt-2">Substitua o <code>Branch</code> por seu caso (normalmente é <code>main</code> ou <code>master</code>).</p>
+                                <p>O <code>nomeRemote</code> é o mesmo nome de quando você criou um <a href="comandos_basicos.html#criando-o-remote">repositório</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Forçando Push</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git push -f &lt;nomeDoRemote&gt; &lt;nomeDaBranch&gt;</code>
+                                <p class="mt-2">Força o push do repositório local para o remoto, sobrescrevendo o histórico.</p>
+                                <div class="alert alert-warning mt-3">
+                                    <p class="mb-0">Não é recomendado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Alterando o Remote</h2>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <code>git remote set-url origin https://github.com/usuario/Novorepositorio.git</code>
+                                <p class="mt-2">Altera o repositório remoto, desvinculando o antigo e vinculando o novo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>Documentação Git - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
